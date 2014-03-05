@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE70564518106F12003F990A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE70564418106F12003F990A /* Foundation.framework */; };
+		FE70564718106F12003F990A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE70564618106F12003F990A /* CoreGraphics.framework */; };
+		FE70564918106F12003F990A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE70564818106F12003F990A /* UIKit.framework */; };
+		FE70564F18106F12003F990A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE70564D18106F12003F990A /* InfoPlist.strings */; };
+		FE70565118106F12003F990A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE70565018106F12003F990A /* main.m */; };
+		FE70565518106F12003F990A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE70565418106F12003F990A /* AppDelegate.m */; };
+		FE70565818106F12003F990A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE70565618106F12003F990A /* Main.storyboard */; };
+		FE70565B18106F12003F990A /* CurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE70565A18106F12003F990A /* CurrencyViewController.m */; };
+		FE70565D18106F12003F990A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE70565C18106F12003F990A /* Images.xcassets */; };
+		FE70566418106F12003F990A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE70566318106F12003F990A /* XCTest.framework */; };
+		FE70566518106F12003F990A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE70564418106F12003F990A /* Foundation.framework */; };
+		FE70566618106F12003F990A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE70564818106F12003F990A /* UIKit.framework */; };
+		FE70566E18106F12003F990A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE70566C18106F12003F990A /* InfoPlist.strings */; };
+		FE70567018106F12003F990A /* MMNumericInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE70566F18106F12003F990A /* MMNumericInputTests.m */; };
+		FE705682181073AD003F990A /* MMNumericInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE705680181073AD003F990A /* MMNumericInputView.m */; };
+		FE705683181073AD003F990A /* MMNumericInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE705681181073AD003F990A /* MMNumericInputView.xib */; };
+		FE7056851810907C003F990A /* keyHighlightedBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7056841810907C003F990A /* keyHighlightedBackground.png */; };
+		FE70733E1810AAAF00369D24 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = FE70733D1810AAAF00369D24 /* close.png */; };
+		FE7073401810AAC800369D24 /* eject.png in Resources */ = {isa = PBXBuildFile; fileRef = FE70733F1810AAC800369D24 /* eject.png */; };
+		FEB761B41811A45000061827 /* keyCenterBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB761B11811A45000061827 /* keyCenterBackground.png */; };
+		FEB761B51811A45000061827 /* keyLeftBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB761B21811A45000061827 /* keyLeftBackground.png */; };
+		FEB761B61811A45000061827 /* keyRightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB761B31811A45000061827 /* keyRightBackground.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE70566718106F12003F990A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE70563918106F11003F990A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE70564018106F11003F990A;
+			remoteInfo = MMNumericInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE70564118106F12003F990A /* MMNumericInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMNumericInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE70564418106F12003F990A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE70564618106F12003F990A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE70564818106F12003F990A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE70564C18106F12003F990A /* MMNumericInput-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMNumericInput-Info.plist"; sourceTree = "<group>"; };
+		FE70564E18106F12003F990A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE70565018106F12003F990A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE70565218106F12003F990A /* MMNumericInput-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMNumericInput-Prefix.pch"; sourceTree = "<group>"; };
+		FE70565318106F12003F990A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE70565418106F12003F990A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE70565718106F12003F990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE70565918106F12003F990A /* CurrencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyViewController.h; sourceTree = "<group>"; };
+		FE70565A18106F12003F990A /* CurrencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyViewController.m; sourceTree = "<group>"; };
+		FE70565C18106F12003F990A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE70566218106F12003F990A /* MMNumericInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMNumericInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE70566318106F12003F990A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FE70566B18106F12003F990A /* MMNumericInputTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMNumericInputTests-Info.plist"; sourceTree = "<group>"; };
+		FE70566D18106F12003F990A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE70566F18106F12003F990A /* MMNumericInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMNumericInputTests.m; sourceTree = "<group>"; };
+		FE70567F181073AD003F990A /* MMNumericInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNumericInputView.h; sourceTree = "<group>"; };
+		FE705680181073AD003F990A /* MMNumericInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNumericInputView.m; sourceTree = "<group>"; };
+		FE705681181073AD003F990A /* MMNumericInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMNumericInputView.xib; sourceTree = "<group>"; };
+		FE7056841810907C003F990A /* keyHighlightedBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyHighlightedBackground.png; sourceTree = "<group>"; };
+		FE70733D1810AAAF00369D24 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		FE70733F1810AAC800369D24 /* eject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eject.png; sourceTree = "<group>"; };
+		FEB761B11811A45000061827 /* keyCenterBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyCenterBackground.png; sourceTree = "<group>"; };
+		FEB761B21811A45000061827 /* keyLeftBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyLeftBackground.png; sourceTree = "<group>"; };
+		FEB761B31811A45000061827 /* keyRightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyRightBackground.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE70563E18106F11003F990A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE70564718106F12003F990A /* CoreGraphics.framework in Frameworks */,
+				FE70564918106F12003F990A /* UIKit.framework in Frameworks */,
+				FE70564518106F12003F990A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE70565F18106F12003F990A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE70566418106F12003F990A /* XCTest.framework in Frameworks */,
+				FE70566618106F12003F990A /* UIKit.framework in Frameworks */,
+				FE70566518106F12003F990A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE70563818106F11003F990A = {
+			isa = PBXGroup;
+			children = (
+				FE70564A18106F12003F990A /* MMNumericInput */,
+				FE70566918106F12003F990A /* MMNumericInputTests */,
+				FE70564318106F12003F990A /* Frameworks */,
+				FE70564218106F12003F990A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE70564218106F12003F990A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE70564118106F12003F990A /* MMNumericInput.app */,
+				FE70566218106F12003F990A /* MMNumericInputTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE70564318106F12003F990A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE70564418106F12003F990A /* Foundation.framework */,
+				FE70564618106F12003F990A /* CoreGraphics.framework */,
+				FE70564818106F12003F990A /* UIKit.framework */,
+				FE70566318106F12003F990A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE70564A18106F12003F990A /* MMNumericInput */ = {
+			isa = PBXGroup;
+			children = (
+				FE70565318106F12003F990A /* AppDelegate.h */,
+				FE70565418106F12003F990A /* AppDelegate.m */,
+				FE70565618106F12003F990A /* Main.storyboard */,
+				FE70565918106F12003F990A /* CurrencyViewController.h */,
+				FE70565A18106F12003F990A /* CurrencyViewController.m */,
+				FE70565C18106F12003F990A /* Images.xcassets */,
+				FE70564B18106F12003F990A /* Supporting Files */,
+				FE70567E181073AD003F990A /* MMNumericInputView */,
+			);
+			path = MMNumericInput;
+			sourceTree = "<group>";
+		};
+		FE70564B18106F12003F990A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE70564C18106F12003F990A /* MMNumericInput-Info.plist */,
+				FE70564D18106F12003F990A /* InfoPlist.strings */,
+				FE70565018106F12003F990A /* main.m */,
+				FE70565218106F12003F990A /* MMNumericInput-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE70566918106F12003F990A /* MMNumericInputTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE70566F18106F12003F990A /* MMNumericInputTests.m */,
+				FE70566A18106F12003F990A /* Supporting Files */,
+			);
+			path = MMNumericInputTests;
+			sourceTree = "<group>";
+		};
+		FE70566A18106F12003F990A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE70566B18106F12003F990A /* MMNumericInputTests-Info.plist */,
+				FE70566C18106F12003F990A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE70567E181073AD003F990A /* MMNumericInputView */ = {
+			isa = PBXGroup;
+			children = (
+				FE70567F181073AD003F990A /* MMNumericInputView.h */,
+				FE705680181073AD003F990A /* MMNumericInputView.m */,
+				FE705681181073AD003F990A /* MMNumericInputView.xib */,
+				FEB761B21811A45000061827 /* keyLeftBackground.png */,
+				FEB761B11811A45000061827 /* keyCenterBackground.png */,
+				FEB761B31811A45000061827 /* keyRightBackground.png */,
+				FE7056841810907C003F990A /* keyHighlightedBackground.png */,
+				FE70733D1810AAAF00369D24 /* close.png */,
+				FE70733F1810AAC800369D24 /* eject.png */,
+			);
+			path = MMNumericInputView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE70564018106F11003F990A /* MMNumericInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE70567318106F12003F990A /* Build configuration list for PBXNativeTarget "MMNumericInput" */;
+			buildPhases = (
+				FE70563D18106F11003F990A /* Sources */,
+				FE70563E18106F11003F990A /* Frameworks */,
+				FE70563F18106F11003F990A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMNumericInput;
+			productName = MMNumericInput;
+			productReference = FE70564118106F12003F990A /* MMNumericInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE70566118106F12003F990A /* MMNumericInputTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE70567618106F12003F990A /* Build configuration list for PBXNativeTarget "MMNumericInputTests" */;
+			buildPhases = (
+				FE70565E18106F12003F990A /* Sources */,
+				FE70565F18106F12003F990A /* Frameworks */,
+				FE70566018106F12003F990A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE70566818106F12003F990A /* PBXTargetDependency */,
+			);
+			name = MMNumericInputTests;
+			productName = MMNumericInputTests;
+			productReference = FE70566218106F12003F990A /* MMNumericInputTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE70563918106F11003F990A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mundue LLC";
+				TargetAttributes = {
+					FE70566118106F12003F990A = {
+						TestTargetID = FE70564018106F11003F990A;
+					};
+				};
+			};
+			buildConfigurationList = FE70563C18106F11003F990A /* Build configuration list for PBXProject "MMNumericInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE70563818106F11003F990A;
+			productRefGroup = FE70564218106F12003F990A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE70564018106F11003F990A /* MMNumericInput */,
+				FE70566118106F12003F990A /* MMNumericInputTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE70563F18106F11003F990A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB761B51811A45000061827 /* keyLeftBackground.png in Resources */,
+				FE70565D18106F12003F990A /* Images.xcassets in Resources */,
+				FE70564F18106F12003F990A /* InfoPlist.strings in Resources */,
+				FE70565818106F12003F990A /* Main.storyboard in Resources */,
+				FEB761B61811A45000061827 /* keyRightBackground.png in Resources */,
+				FE7073401810AAC800369D24 /* eject.png in Resources */,
+				FEB761B41811A45000061827 /* keyCenterBackground.png in Resources */,
+				FE70733E1810AAAF00369D24 /* close.png in Resources */,
+				FE7056851810907C003F990A /* keyHighlightedBackground.png in Resources */,
+				FE705683181073AD003F990A /* MMNumericInputView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE70566018106F12003F990A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE70566E18106F12003F990A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE70563D18106F11003F990A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE70565B18106F12003F990A /* CurrencyViewController.m in Sources */,
+				FE70565518106F12003F990A /* AppDelegate.m in Sources */,
+				FE70565118106F12003F990A /* main.m in Sources */,
+				FE705682181073AD003F990A /* MMNumericInputView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE70565E18106F12003F990A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE70567018106F12003F990A /* MMNumericInputTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE70566818106F12003F990A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE70564018106F11003F990A /* MMNumericInput */;
+			targetProxy = FE70566718106F12003F990A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE70564D18106F12003F990A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE70564E18106F12003F990A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE70565618106F12003F990A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE70565718106F12003F990A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE70566C18106F12003F990A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE70566D18106F12003F990A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE70567118106F12003F990A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE70567218106F12003F990A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE70567418106F12003F990A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMNumericInput/MMNumericInput-Prefix.pch";
+				INFOPLIST_FILE = "MMNumericInput/MMNumericInput-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE70567518106F12003F990A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMNumericInput/MMNumericInput-Prefix.pch";
+				INFOPLIST_FILE = "MMNumericInput/MMNumericInput-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE70567718106F12003F990A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMNumericInput.app/MMNumericInput";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMNumericInput/MMNumericInput-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MMNumericInputTests/MMNumericInputTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FE70567818106F12003F990A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMNumericInput.app/MMNumericInput";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMNumericInput/MMNumericInput-Prefix.pch";
+				INFOPLIST_FILE = "MMNumericInputTests/MMNumericInputTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE70563C18106F11003F990A /* Build configuration list for PBXProject "MMNumericInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE70567118106F12003F990A /* Debug */,
+				FE70567218106F12003F990A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE70567318106F12003F990A /* Build configuration list for PBXNativeTarget "MMNumericInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE70567418106F12003F990A /* Debug */,
+				FE70567518106F12003F990A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE70567618106F12003F990A /* Build configuration list for PBXNativeTarget "MMNumericInputTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE70567718106F12003F990A /* Debug */,
+				FE70567818106F12003F990A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE70563918106F11003F990A /* Project object */;
+}
